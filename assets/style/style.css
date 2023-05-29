@@ -1,4 +1,7 @@
-* {
+/* Importações de CSS */
+@import url("./flex.css");
+
+*{
     box-sizing: border-box;
 }
 
