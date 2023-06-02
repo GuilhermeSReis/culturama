@@ -1,5 +1,6 @@
 /* Importações de CSS */
 @import url("./flex.css");
+@import url("./grid.css");
 
 *{
     box-sizing: border-box;

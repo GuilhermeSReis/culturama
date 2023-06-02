@@ -1,0 +1,38 @@
+.banner{
+    display: grid;
+    gap: 1rem;
+}
+
+.banner img:nth-child(1){
+    grid-column: 1/3;
+}
+
+.banner img:nth-child(4){
+    
+    /* grid-column: 2/3;
+    grid-row: 2/4; */
+
+    grid-area: 2 / 2 / 4 / 3;
+}
+
+
+/* Tela de Tablet Media Query 720px */
+@media screen and (min-width: 720px) {
+    .banner img:nth-child(1){
+        /* grid-column: 1/2;
+        grid-row: 1/3; */
+        grid-area: 1/1/3/2;
+    }
+
+    .banner img:nth-child(4){
+        /* grid-column: 3/4;
+        grid-row: 1/3; */
+        grid-area: 1/3/3/4;
+    }
+
+}
+
+/* Tela de Desktop Media Query 1440px */
+@media screen and (min-width:1440px) {
+
+}
