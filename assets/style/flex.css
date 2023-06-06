@@ -24,16 +24,18 @@
     flex-grow: 1;
 }
 
-/* Destaques */
+/* Destaques e Agenda*/
 
-.eventos__lista{
+.eventos__lista,
+.agenda__lista{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem 1.5rem;
     justify-content: center;
 }
 
-.eventos__item{
+.eventos__item,
+.agenda__item{
     flex-grow: 1;
 }
 
@@ -51,7 +53,8 @@
 
     /* Destaques */
 
-    .eventos__lista{
+    .eventos__lista,
+    .agenda__lista{
         justify-content: end;
     }
 
