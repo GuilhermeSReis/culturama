@@ -103,5 +103,30 @@
 
 /* Tela de Desktop Media Query 1440px */
 @media screen and (min-width:1440px) {
+    .categorias{
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo"
+        "lista destaque"
+        "lista imagem";
+        gap: 1.5rem 1rem;
+        grid-template-columns: calc(50% - 0.75rem) repeat(2,auto);
+        grid-area: auto 1fr auto;
+    }
 
+    .categorias__titulo {
+        grid-area: titulo;
+    }
+    
+    .categorias__lista {
+        grid-area: lista;
+    }
+    
+    .categorias__destaques {
+        grid-area: destaque;
+    }
+    
+    .categorias__imagem {
+        grid-area: imagem;
+    }
 }
