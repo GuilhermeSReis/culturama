@@ -1,3 +1,5 @@
+
+/* Banner */
 .banner{
     display: grid;
     gap: 1rem;
@@ -11,6 +13,7 @@
     grid-area: 2 / 2 / 4 / 3;
 }
 
+/* Eventos */
 .eventos__item{
     display: grid;
     grid-template-columns: 1fr auto;
@@ -42,9 +45,45 @@
     grid-area:botao;
 }
 
+/* Agenda */
+.agenda__item{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "img img"
+    "mes nome"
+    "dia none"
+    "hora botao";
+}
+
+.agenda__item img{
+    grid-area: img;
+}
+
+.agenda__item h3{
+    grid-area: mes;
+}
+
+.agenda__item h4{
+    grid-area: dia;
+}
+
+.agenda__item h5{
+    grid-area: hora;
+}
+
+.agenda__item h6{
+    grid-area: nome;
+}
+
+.agenda__item button{
+    grid-area: botao;
+}
 
 /* Tela de Tablet Media Query 720px */
 @media screen and (min-width: 720px) {
+    /* Banner */
     .banner{
         grid-template-columns: calc(50% - 0.75rem) repeat(2,auto);
         column-gap: 1.5rem;
