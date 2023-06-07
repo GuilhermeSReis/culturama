@@ -39,6 +39,17 @@
     flex-grow: 1;
 }
 
+/* Rodápe */
+.rodape{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape__logo{
+    align-self: flex-end;
+}
+
 /* Tela de Tablet Media Query 720px */
 @media screen and (min-width: 720px) {
     /* Cabecalho */
